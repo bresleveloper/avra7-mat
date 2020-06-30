@@ -1,0 +1,18 @@
+<p>datepicker-heb works!</p>
+
+<mat-form-field appearance="fill">
+    <mat-label>בחר תאריך</mat-label>
+    <input 
+        matInput 
+        [matDatepicker]="pickerOfMoo"
+        [min]="minDate"
+        [max]="maxDate"
+        (dateChange)="logOutput($event, 'dateChange')"
+        (dateInput)="logOutput($event, 'dateInput')"
+    >
+    <mat-datepicker-toggle matSuffix [for]="pickerOfMoo"></mat-datepicker-toggle>
+    <mat-datepicker #pickerOfMoo></mat-datepicker>
+</mat-form-field>
+
+<br><br>
+<button mat-raised-button (click)="openBYclick()">if you double click me i will open the datepicker</button>

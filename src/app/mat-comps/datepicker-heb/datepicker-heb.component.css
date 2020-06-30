@@ -1,0 +1,3 @@
+mat-form-field{direction: rtl;text-align: right;}
+
+::ng-deep .mat-calendar-table{direction: rtl;}
